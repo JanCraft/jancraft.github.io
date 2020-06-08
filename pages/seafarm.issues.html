@@ -1,6 +1,70 @@
 <br>
 <h4 style="text-align: center;">Issues for SeaFarm</h4>
+<div id="issues">
+    <div style="text-align: end;">
+        <a class="btn btn-success" target="New issue" href="https://github.com/JanCraft/SeaFarm/issues/new">New issue</a>
+    </div>
+    <br>
+    <div id="remove">
+        <center>
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </center>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
 
 <script>
-    addNavbarHTML('<a class="nav-link btn btn-outline-secondary" onclick="location.hash = \'\'; location.reload();">Game</a>');
+    addNavbarHTML('<a class="nav-link btn btn-outline-secondary" onclick="location.hash = \'#seafarm\'; location.reload();">Game</a>');
+
+    let issuesDiv = document.getElementById("issues");
+    $.ajax({
+        type: 'GET',
+        crossDomain: true,
+        url: "https://api.github.com/repos/JanCraft/SeaFarm/issues",
+        success: function (data) {
+            $("#remove").remove();
+
+            if (data.length == 0) {
+                let div = document.createElement('div');
+                div.innerHTML = `<h5 style="text-align: center; color: #666666;">Yay! There are no issues!</h5>`;
+
+                issuesDiv.appendChild(div);
+            }
+            data.forEach(issue => {
+                issue.state_color = "badge-secondary";
+                if (issue.state == 'open') {
+                    issue.state_color = "badge-success";
+                } else if (issue.state == 'closed') {
+                    issue.state_color = "badge-danger";
+                }
+
+                issue._labels = "";
+                issue.labels.forEach(label => {
+                    if (getBrightness("#" + label.color) == 'dark') {
+                        issue._labels += "<span class=\"badge badge-secondary\" style=\"background-color: #" + label.color + ";\">" + label.name + "</span>  ";
+                    } else {
+                        issue._labels += "<span class=\"badge\" style=\"background-color: #" + label.color + ";\">" + label.name + "</span>  ";
+                    }
+                });
+
+                let div = document.createElement('div');
+                div.className = "card";
+                div.innerHTML = `
+                <div class="card-body">
+    <h5 class="card-title">` + issue.title + `  <span class="badge ` + issue.state_color + `">` + issue.state + `</span></h5>
+    <h5 class="card-title">` + issue._labels + `</h5>
+    <p class="card-text">` + issue.body + `</p>
+    <a href="` + issue.html_url + `" target="issue` + issue.number + `" class="card-link">Check in GitHub</a>
+  </div>
+                `;
+
+                issuesDiv.appendChild(div);
+            });
+        }
+    });
 </script>
