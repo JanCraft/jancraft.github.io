@@ -35015,7 +35015,7 @@ parcelRequire = function(e, r, t, n) {
                 }
 
                 // Proccess pose data
-                if (poseData != undefined && poseData.score >= y.multiPoseDetection.minPoseConfidence && connection != undefined && connection.readyState != connection.CLOSED) {
+                if (poseData != undefined && poseData.score >= y.multiPoseDetection.minPoseConfidence && connection != undefined && connection.readyState == 1) {
                     connection.send(JSON.stringify(poseData));
                 }
 
