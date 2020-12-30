@@ -1,50 +1,48 @@
 <!DOCTYPE purewebjs>
 
 <application>
-    <title>PureWebJS test</title>
-    <favicon src="/purewebjs.png"></favicon>
+    <title>jancraft888</title>
+    <favicon src="/favicon.png"></favicon>
     <container id="main" render="always">
-        <img src="/purewebjs.png" width="64" height="64">
+        <img src="/favicon.png" width="64" height="64">
         <header>
-            PureWebJS test
+            jancraft888
         </header>
         <content>
-            PureWebJS is a library to create web applications and use rich javascript
-            when coding instead of plain JS.
-            <br>
-            Rich javascript (.pjs) files contain JavaScript and HTML written together and can contain structs, snippets, and more.
-
+            Hi, I'm a developer who works on many different languages (Python, Java, C, Javascript, C#, C++, Lua, etc.)
+            <br>I'm the owner, founder and CEO of <a href='https://jdev.com.es' target="jdevpage">jDev</a>.
+            <br>I create tons of useful stuff and sometimes add it to GitHub when I remember.
             <br>
             <br>
 
-            <a href="/">Main page</a>
-            <a class="btn-filled" href="/info">More info</a>
-            <a class="btn" href="/countdown">Countdown</a>
+            <a class="btn-filled" href="/about">About me</a>
+            <a class="btn-filled" href="/projects">My projects</a>
+            <a class="btn" href="https://jdev.com.es" target="jdevpage">jDev</a>
         </content>
         <footer>Copyright &copy; 2020 - jancraft888</footer>
     </container>
 
-    <container id="main" render="pageview /info">
-        <header>Extra info</header>
+    <container id="main" render="pageview /about">
+        <header>About me</header>
         <content>
-            You can make <code>&lt;container&gt;</code> elements with render attributes such as
+            I started coding when I was 8/9 years old and created many games and tools.
+            <br>
+        </content>
+    </container>
+
+    <container id="main" render="pageview /projects">
+        <header>My projects</header>
+        <content>
             <ul>
-                <li>always</li>
-                <li>pageview /my-cool-page</li>
-                <li>delayed 5</li>
+                <li><b>objG</b> - A simple programming language for begginers.</li>
+                <li><b>dynscript</b> - Anti-cahce JS loader.</li>
+                <li><b>QFT</b> - Transfer files between different OSs in the same network.</li>
+                <li><b>jDev-GameKit2</b> - A game dev kit for HTML5 2D and 3D games.</li>
             </ul>
-        </content>
-        <footer>Copyright &copy; 2020 - jancraft888</footer>
-    </container>
 
-    <container id="main" render="pageview /countdown">
-        <header>Countdown</header>
-        <content>
-            <div id="countdown">
-                ...
-            </div>
+            <i>You can view and download these projects <a href="https://github.com/JanCraft?tab=repositories" target="jancraft-github-repos">here</a>.</i>
         </content>
-        <footer>This countdown marks the (estimated) release of jDev's game <b>Tedd'or</b></footer>
+        <footer>All projects specified are owned by <b>jancraft888</b> or <b>jDev</b>.</footer>
     </container>
     
     <runtime>
