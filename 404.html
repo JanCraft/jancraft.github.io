@@ -1,0 +1,55 @@
+<!DOCTYPE purewebjs>
+
+<application>
+    <title>PureWebJS test</title>
+    <favicon src="/purewebjs.png"></favicon>
+    <container id="main" render="always">
+        <img src="/purewebjs.png" width="64" height="64">
+        <header>
+            PureWebJS test
+        </header>
+        <content>
+            PureWebJS is a library to create web applications and use rich javascript
+            when coding instead of plain JS.
+            <br>
+            Rich javascript (.pjs) files contain JavaScript and HTML written together and can contain structs, snippets, and more.
+
+            <br>
+            <br>
+
+            <a href="/">Main page</a>
+            <a class="btn-filled" href="/info">More info</a>
+            <a class="btn" href="/countdown">Countdown</a>
+        </content>
+        <footer>Copyright &copy; 2020 - jancraft888</footer>
+    </container>
+
+    <container id="main" render="pageview /info">
+        <header>Extra info</header>
+        <content>
+            You can make <code>&lt;container&gt;</code> elements with render attributes such as
+            <ul>
+                <li>always</li>
+                <li>pageview /my-cool-page</li>
+                <li>delayed 5</li>
+            </ul>
+        </content>
+        <footer>Copyright &copy; 2020 - jancraft888</footer>
+    </container>
+
+    <container id="main" render="pageview /countdown">
+        <header>Countdown</header>
+        <content>
+            <div id="countdown">
+                ...
+            </div>
+        </content>
+        <footer>This countdown marks the (estimated) release of jDev's game <b>Tedd'or</b></footer>
+    </container>
+    
+    <runtime>
+        <javascript src="/script.pjs"></javascript>
+    </runtime>
+</application>
+
+<script defer src="/purewebjs.js"></script>
