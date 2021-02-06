@@ -1,53 +1,160 @@
-<!DOCTYPE purewebjs>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jDev</title>
 
-<application>
-    <title>jancraft888</title>
-    <favicon src="/favicon.png"></favicon>
-    <container id="main" render="always">
-        <img src="/favicon.png" width="64" height="64">
-        <header>
-            jancraft888
-        </header>
-        <content>
-            Hi, I'm a developer who works on many different languages (Python, Java, C, Javascript, C#, C++, Lua, etc.)
-            <br>I'm the owner, founder and CEO of <a href='https://jdev.com.es' target="jdevpage">jDev</a>.
-            <br>I create tons of useful stuff and sometimes add it to GitHub when I remember.
-            <br>
-            <br>
-
-            <a class="btn-filled" href="/about">About me</a>
-            <a class="btn-filled" href="/projects">My projects</a>
-            <a class="btn" href="https://jdev.com.es" target="jdevpage">jDev</a>
-        </content>
-        <footer>Copyright &copy; 2020 - jancraft888</footer>
-    </container>
-
-    <container id="main" render="pageview /about">
-        <header>About me</header>
-        <content>
-            I started coding when I was 8/9 years old and created many games and tools.
-            <br>
-        </content>
-    </container>
-
-    <container id="main" render="pageview /projects">
-        <header>My projects</header>
-        <content>
-            <ul>
-                <li><b>objG</b> - A simple programming language for begginers.</li>
-                <li><b>dynscript</b> - Anti-cahce JS loader.</li>
-                <li><b>QFT</b> - Transfer files between different OSs in the same network.</li>
-                <li><b>jDev-GameKit2</b> - A game dev kit for HTML5 2D and 3D games.</li>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-light">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/favicon.png" alt="" width=30 height=30>
+            jDev
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/games">Games</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/software">Software</a>
+              </li>
             </ul>
+          </div>
+        </div>
+      </nav>
 
-            <i>You can view and download these projects <a href="https://github.com/JanCraft?tab=repositories" target="jancraft-github-repos">here</a>.</i>
-        </content>
-        <footer>All projects specified are owned by <b>jancraft888</b> or <b>jDev</b>.</footer>
-    </container>
+    <div class="container">
+        <view name="view-default" hidden>
+            <h1>jDev</h1>
+            <h3>Everything for everyone</h3>
+        </view>
+        <view name="view-games" hidden>
+            <h1>Games</h1>
+            <h3>Our developers also make games</h3>
+            <br>
+            <a href="#wawary"><img class="game-cover" src="img/wawary_cover.png" alt=""></a>
+            <a href="#flanker"><img class="game-cover" src="img/flanker_logo.png" alt=""></a>
+            <a href="#temorak"><img class="game-cover" src="img/temorak_logo.png" alt=""></a>
+            <br>
+            <br>
+            <br>
+            <div id="wawary" class="card bg-dark">
+              <h5 class="card-header bg-secondary">Wawary</h5>
+              <div class="card-body">
+                <img class="round-border" src="img/wawary_cover.png" alt="" width=300 height=400><br><br>
+                <h5 class="card-title">A rythm game where you collect blue blobs as fast as possible</h5>
+                <p class="card-text">This game was created by <b>jancraft888</b> and published for <b>jDev</b>.
+                The game is supposed to run to the rythm of the music, but in practice it never worked.
+              
+                Download directly or through the <i>jDev Launcher (recommened)</i></p>
+                <a href="https://www.dropbox.com/s/0y4ske60s2okt84/wawary.zip?dl=1" class="btn btn-primary">Direct download</a>
+                <a target=jdevlauncher href="https://github.com/JanCraft/jDevLauncher/releases/" class="btn btn-success">jDev Launcher</a>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="flanker" class="card bg-dark">
+              <h5 class="card-header bg-secondary">Flanker</h5>
+              <div class="card-body">
+                <img class="round-border" src="img/flanker_logo.png" alt="" width=400 height=400><br><br>
+                <h5 class="card-title">A classic FPS-style</h5>
+                <p class="card-text">This game was created by <b>Sake</b> and published for <b>jDev</b>.
+                We loved other games like this so much, that we in fact made our own game.
+                Currenly the map is taken from <b>CS:GO</b> but we're working on changing it.
+              
+                Download directly or through the <i>jDev Launcher (recommened)</i></p>
+                <a href="https://www.dropbox.com/s/x04jdsjpxkqkg1r/Flanker.zip?dl=1" class="btn btn-primary">Direct download</a>
+                <a target=jdevlauncher href="https://github.com/JanCraft/jDevLauncher/releases/" class="btn btn-success">jDev Launcher</a>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="temorak" class="card bg-dark">
+              <h5 class="card-header bg-secondary">Temorak</h5>
+              <div class="card-body">
+                <img class="round-border" src="img/temorak_logo.png" alt="" width=400 height=400><br><br>
+                <h5 class="card-title">Survival and adventure game</h5>
+                <p class="card-text">This game was created by <b>jancraft888</b> and published for <b>jDev</b>.
+                During the bad summer of 2020, <b>Jan</b> developed a small game with locally-hosted servers.
+              
+                Play directly from the browser (the public servers are NOT running until a new release)</p>
+                <a target=temorak_play href="https://jancraft.github.io/Temorak/" class="btn btn-success">Play on the browser</a>
+              </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+        </view>
+        <view name="view-software" hidden>
+            <h1>Software</h1>
+            <h3>Tools and libraries made by us</h3>
+        </view>
+        <view name="view-about" hidden>
+            <h1>About</h1>
+            <h3>the jDev Team</h3>
+            <br>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card bg-dark">
+                  <h4 class="card-header bg-secondary">jancraft888 <i>(aka. Jan)</i></h4>
+                  <div class="card-body">
+                    <h6 class="card-subtitle">CEO and Founder</h6><br>
+                    <p class="card-text"><i>"I created jDev in 2016 to publish games and develop tools, now it has grown a bit more and we released various games. I hope we grow a bit more this year."</i></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-dark">
+                  <h4 class="card-header bg-secondary">Sake</h4>
+                  <div class="card-body">
+                    <h6 class="card-subtitle">Flanker's creator</h6><br>
+                    <p class="card-text"><i>""</i></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-dark">
+                  <h4 class="card-header bg-secondary">DarKITO <i>(aka. Hugo)</i></h4>
+                  <div class="card-body">
+                    <h6 class="card-subtitle">Creative Director & best <i>wawary</i> player</h6><br>
+                    <p class="card-text"><i>""</i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br>
+            <br>
+            <h4 class="alert alert-primary" role="alert">
+              <b>jDev</b> was a name Jan decided to give his development team, he thought about <i>Jancraft Developers</i>, but it sounded too egoist, so he named it jDev.
+              Jan was the only developer back then, and made many simple games now lost on 5 year old hard drives, some may still be available through old pages.
+            </h4>
+        </view>
+    </div>
+
+    <button onclick="backToTop()" id="back-to-top" title="Go to top">Top</button>
     
-    <runtime>
-        <javascript src="/script.pjs"></javascript>
-    </runtime>
-</application>
-
-<script defer src="/purewebjs.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
