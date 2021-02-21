@@ -70,9 +70,9 @@ const LANG = {
         "ca": "Un joc clàssic a l'estil FPS"
     },
     "{{flanker_long_desc}}": {
-        "es": "Nos encantaron otros juegos como este tanto, que de hecho hizimos uno propio.\nActualmente el mapa ed de <b>CS:GO</b> pero estamos trabajando en cambiarlo.",
-        "en": "We loved other games like this so much, that we in fact made our own game.\nCurrently the map is taken from <b>CS:GO</b> but we're working on changing it.",
-        "ca": "Ens van encantar tant altres jocs com aquest, que de fet vam crear el nostre propi joc. \nActualment el mapa està pres de <b>CS:GO</b>, però estem treballant per canviar-lo."
+        "es": "Nos encantaron otros juegos como este tanto, que de hecho hizimos uno propio.",
+        "en": "We loved other games like this so much, that we in fact made our own game.",
+        "ca": "Ens van encantar tant altres jocs com aquest, que de fet vam crear el nostre propi joc."
     },
     "{{temorak_short_desc}}": {
         "es": "Juego de supervivencia y aventura",
