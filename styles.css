@@ -1,6 +1,9 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(60, 60, 60);
-    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
 }

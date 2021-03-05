@@ -37,7 +37,3 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-if (navigator.serviceWorker) {
-  navigator.serviceWorker.register('/service_worker.js');
-}

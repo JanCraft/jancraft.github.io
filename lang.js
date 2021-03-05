@@ -34,25 +34,15 @@ const LANG = {
         "en": "This game was created by <b>jancraft888</b> and published for <b>jDev</b>.",
         "ca": "Aquest joc va ser creat per <b>jancraft888</b> y publicat per a <b>jDev</b>."
     },
-    "{{download_launcher}}": {
-        "es": "Descarga directamente o a través del <i>jDev Launcher (recomendado)</i>",
-        "en": "Download directly or through the <i>jDev Launcher (recommened)</i>",
-        "ca": "Descarrega directamente o a través del <i>jDev Launcher (recomanat)</i>"
-    },
-    "{{direct_download}}": {
-        "es": "Descarga directa",
-        "en": "Direct download",
-        "ca": "Descarréga directa"
-    },
     "{{play_browser}}": {
         "es": "Jugar en el navegador",
         "en": "Play on the browser",
         "ca": "Juga al navegador"
     },
     "{{download_browser}}": {
-        "es": "Juega directamente desde el navegador (los servidores públicos NO están disponibles)",
-        "en": "Play directly from the browser (the public servers are NOT running until a new release)",
-        "ca": "Juga diréctament al navegador (els servidors públics NO estan disponibles)"
+        "es": "Juega directamente desde el navegador (BETA)",
+        "en": "Play directly from the browser (BETA)",
+        "ca": "Juga diréctament al navegador (BETA)"
     },
     "{{wawary_short_desc}}": {
         "es": "Un juego de ritmo en el que recolectas circulos azules tan rápido como sea posible",
@@ -80,9 +70,9 @@ const LANG = {
         "ca": "Joc de supervivència i aventura"
     },
     "{{temorak_long_desc}}": {
-        "es": "Durante el malo verano de 2020, Jan desarrolló un pequeño juego con servidores localmente hosteados.",
-        "en": "During the bad summer of 2020, Jan developed a small game with locally-hosted servers.",
-        "ca": "Durant el mal estiu del 2020, Jan va desenvolupar un petit joc amb servidors allotjats localment."
+        "es": "Durante el malo verano de 2020, Jan desarrolló un pequeño juego con servidores localmente hosteados. Ahora utiliza la red jDev gNET.",
+        "en": "During the bad summer of 2020, Jan developed a small game with locally-hosted servers. It now uses the jDev gNET network.",
+        "ca": "Durant el mal estiu del 2020, Jan va desenvolupar un petit joc amb servidors allotjats localment. Ara utilitza la xarxa jDev gNET."
     },
     "{{usmbeats_short_desc}}": {
         "es": "Otro, más innovativo, juego de ritmo",
@@ -139,11 +129,6 @@ const LANG = {
         "en": "Tools and libraries made by us",
         "ca": "Eines i llibreríes creades per nosaltres"
     },
-    "{{jdevlauncher_desc}}": {
-        "es": "Queríamos una forma de permitir a nuestros jugadores actualizar y descargar nuestros juegos desde un solo lugar, así que creamos jDev Launcher. Con este launcher, puedes actualizar y descargar todos nuestros juegos y leer las notas de la versión.",
-        "en": "We wanted a way to let our players update and download our games from one place, so we created jDev Launcher. With this launcher, you can update and download all our games and read release notes.",
-        "ca": "Volíem una manera de permetre als nostres jugadors actualitzar i descarregar els nostres jocs des d'un lloc, de manera que vam crear jDev Launcher. Amb aquest llançador podeu actualitzar i descarregar tots els nostres jocs i llegir notes de llançament."
-    },
     "{{objg_desc}}": {
         "es": "Un lenguaje de programación amigable para principiantes diseñado para la simplicidad con Python3 y una base de código expandible. Diseñado para soporte de videojuegos, tiene una llibrería de render 2D incorporada usando Tkinter. Construido con una CLI en mente, puede crear sus propias llibrerías .lib nativas a partir del código Python y <i>compilar</i> su código objG en archivos .bin con bytecode que se ejecutarán utilizando la herramienta CLI más rápido que la versión en código fuente.",
         "en": "A begginer-friendly programming language designed for simplicity with Python3 and an expandable codebase. Designed for videogame support, has a built-in 2D render library using Tkinter. Built with a CLI in mind, you can create your own native .lib libraries from Python code and <i>compile</i> your objG code into .bin files with bytecode that will run using the CLI tool faster than the source-code version.",
@@ -157,13 +142,18 @@ const LANG = {
     },
     "{{qft_desc}}": {
         "es": "Tenemos una historia interesante para este. Queríamos ver una película, pero la única memoria USB que tenía suficiente espacio decía que quedaban 2 horas para la copia. Hizimos un sistema de sockets simple para transferir el archivo a través de la red. Solo tardó 1 hora, x4 veces menos que la unidad USB (copiar y copiar de vuelta)",
-        "en": "We have an interesting story for this one. We wanted to watch a move but the only USB stick that had enough space said 2 hours remaining for the copy. We just scraped a simple socket system together to transfer the file via the network. It took only 1 hour, 4x less than the USB drive (copy & copy back)",
-        "ca": "Tenim una història interessant per a aquesta. Volíem veure un moviment, però l'única memòria USB que tenia prou espai deia 2 hores restants per a la còpia. Acabem de rascar un senzill sistema de sòcol per transferir el fitxer mitjançant la xarxa. Va trigar només 1 hora, 4x menys que la unitat USB (copia i copia de nou) "
+        "en": "We have an interesting story for this one. We wanted to watch a movie but the only USB stick that had enough space said 2 hours remaining for the copy. We just scraped a simple socket system together to transfer the file via the network. It took only 1 hour, 4x less than the USB drive (copy & copy back)",
+        "ca": "Tenim una història interessant per a aquesta. Volíem veure un pel·lícula, però l'única memòria USB que tenia prou espai deia 2 hores restants per a la còpia. Acabem de rascar un senzill sistema de sòcol per transferir el fitxer mitjançant la xarxa. Va trigar només 1 hora, 4x menys que la unitat USB (copia i copia de nou) "
     },
     "{{gamekit_desc}}": {
         "es": "¿Porqué no? Un kit de creación de videojuegos para que los desarrolladores creen juegos en 3D y 2D en el navegador con menos esfuerzo. Con este kit se crearon varios prototipos de <a class=\"btn-link\" href=\"#usmbeats\">usm <i>beats</i></a>. Con diferentes demos, es la codebase de jDev más desarrollada en el verano de 2020.",
         "en": "Because why not? A game kit for developers to make games in 3D and 2D in the browser with less effort. Various prototypes for <a class=\"btn-link\" href=\"#usmbeats\">usm <i>beats</i></a> got created with this kit. With different demos, it's the most developed jDev codebase in the summer of 2020.",
         "ca": "Per què no? Un joc de jocs perquè els desenvolupadors facin jocs en 3D i 2D al navegador amb menys esforç. Diversos prototips per a <a class=\"btn-link\" href=\"#usmbeats\"> usm <i>beats</i></a> es va crear amb aquest kit. Amb diferents demostracions, és la base de codis jDev més desenvolupada a l'estiu del 2020."
+    },
+    "{{gnet_desc}}": {
+        "es": "jDev gNET es un servicio de hosting de servidores que utiliza un tipo de técnica peer-to-peer para obtener comunicación host/cliente en tiempo real.",
+        "en": "jDev gNET is a server hosting service that uses a kind of peer-to-peer technique to achieve host/client communication in realtime.",
+        "ca": "jDev gNET és un servei de hosting de servidors que utilitza un tipus de tècnica peer-to-peer per obtenir comunicació host / client en temps real."
     },
     "{{contact_us}}": {
         "es": "Contáctanos",
@@ -175,5 +165,5 @@ const LANG = {
         "en": "Please write a detailed email, in English or Spanish, that explains whatever you want you in a clear manner.",
         "en": "Escriviu un correu electrònic detallat, en anglès o castellà, que expliqui el que vulgueu d'una manera clara."
     },
-    
 }
+let langkw;Object.keys(LANG).forEach(n=>{let a;langkw||(navigator.languages.forEach(a=>{langkw||LANG[n][a]&&(langkw=a)}),langkw||(langkw="en"),document.body.parentNode.lang=langkw),a=LANG[n][langkw],document.body.innerHTML=document.body.innerHTML.replaceAll(n,a)});
