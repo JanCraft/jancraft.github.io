@@ -1,35 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="darkslategray">
-    <meta name="description" content="We are a small game & software development team based in Barcelona, Spain.">
-    <meta name="keywords" content="jDev,videogames,jDev ES,jDev Team,Flanker,wawary,usm beats,Temorak,objG,QFT,dynscript,javascript,developer,jDev GameKit,GameKit,jancraft,jancraft888,pjs,jdev españa,españa,barcelona">
+    <meta name="theme-color" content="506aa1">
+    <meta name="description" content="jDev - Everything for everyone. We are a small game & software development team based in Barcelona, Spain.">
+    <meta name="keywords" content="jDev,videogames,jDev ES,jDev Team,Flanker,wawary,usm beats,Temorak,javascript,developer,jDev GameKit,GameKit,jancraft,jancraft888,pjs,jdev españa,españa,barcelona,spain">
     <meta name="author" content="jDev Team">
     <meta name="creator" content="jDev Team">
     
-    <meta property="og:title" content="jDev Webpage">
+    <meta property="og:title" content="jDev Website">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jdev.com.es/">
     <meta property="og:image" content="https://jdev.com.es/img/favicon.png">
     <meta property="og:image:alt" content="jDev logo">
-    <meta property="og:description" content="We are a small game & software development team based in Barcelona, Spain.">
-
-    <!-- Uncomment this line to enable maintenance -->
-    <!-- meta http-equiv="refresh" content="0; url=/maintenance.html" -->
+    <meta property="og:description" content="jDev - Everything for everyone. We are a small game & software development team based in Barcelona, Spain.">
 
     <title>jDev</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="text-light">
-    <nav class="navbar navbar-expand-sm navbar-dark">
+    <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#home">
-            <img src="img/favicon.png" alt="" width=30 height=30>
+            <img src="img/favicon.png" alt="" width=48 height=48>
             jDev
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,256 +34,264 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a id="nav-home" class="nav-link active" href="#home">{{home}}</a>
+                <a id="nav-home" class="nav-link" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a id="nav-about" class="nav-link" href="#about">{{about_us}}</a>
+                <a id="nav-about" class="nav-link" href="#about">About us</a>
               </li>
               <li class="nav-item">
-                <a id="nav-games" class="nav-link" href="#games">{{games}}</a>
+                <a id="nav-games" class="nav-link" href="#games">Games</a>
               </li>
               <li class="nav-item">
-                <a id="nav-software" class="nav-link" href="#software">{{software}}</a>
+                <a id="nav-software" class="nav-link" href="#software">Software</a>
+              </li>
+              <li class="nav-item">
+                <a id="nav-devlogs" class="nav-link" href="#devlogs">Blog / Devlogs</a>
               </li>
             </ul>
-            <a href="mailto:jancraft.dev@gmail.com?subject=jDev Contact Form&body={{email_desc}}" class="btn btn-success">{{contact_us}}</a>
+            <a href="mailto:jancraft.dev@gmail.com?subject=jDev Contact Form&body=Please write a detailed email, in English or Spanish, that explains whatever you want you in a clear manner." class="btn btn-success">Contact us</a>
           </div>
         </div>
     </nav>
 
-    <div id="home">
-      <br>
-      <br>
-      <br>
-      <div class="container"><h1>jDev</h1>
-        <h3>Everything for everyone</h3>
-        <br>
-        <br>
-        
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <a href="#about" class="btn btn-link text-decoration-none text-primary"><h1>{{about_us}}
-              <img width="286" height="286" src="img/team.svg" alt="">
-            </h1></a>
-          </div>
-          <div class="col">
-            <a href="#games" class="btn btn-link text-decoration-none text-primary"><h1>{{games}}
-              <img width="286" height="286" src="img/games.svg" alt="">
-            </h1></a>
-          </div>
-          <div class="col">
-            <a href="#software" class="btn btn-link text-decoration-none text-primary"><h1>{{software}}
-              <img width="286" height="286" src="img/software.svg" alt="">
-            </h1></a>
-          </div>
-        </div>
-
-        <br>
-        <br>
-        </div>
-    </div>
-    <div id="about">
-      <div class="container">
-        <br>
-        <br>
-
-        <h1>{{about}}</h1>
-        <h3>{{about_short_desc}}</h3>
-        <br>
-
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col">
-            <div class="card bg-dark">
-              <h4 class="card-header bg-secondary">jancraft888 <i>(aka. Jan)</i></h4>
-              <div class="card-body">
-                <h6 class="card-subtitle">{{ceo_founder}}</h6><br>
-                <p class="card-text"><i>"{{jancraft888_quote}}"</i></p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card bg-dark">
-              <h4 class="card-header bg-secondary">DarKITO <i>(aka. Hugo)</i></h4>
-              <div class="card-body">
-                <h6 class="card-subtitle">{{creative_bwp}}</h6><br>
-                <p class="card-text"><i>"{{darkito_quote}}"</i></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <br>
-        <br>
-        <h4 class="alert alert-primary" role="alert">
-          {{about_info}}
-        </h4>
-
-        <br>
-        <br>
-        <h4 class="alert alert-success" role="alert">
-          {{about_schedule}}
-        </h4>
-
-        <br>
-        <br>
-        <h4 class="alert alert-warning" role="alert">
-          {{about_billing}}
-        </h4>
-      </div>
-    </div>
-    <div id="games">
-      <div class="container">
-        <br>
-        <br>
-        <h1>{{games}}</h1>
-        <h3>{{games_desc}}</h3>
-        <br>
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-          <a class="col" href="#wawary"><img class="game-cover" src="img/wawary_cover.png" alt="wawary"></a>
-          <a class="col" href="#flanker"><img class="game-cover" src="img/flanker_logo.png" alt="Flanker"></a>
-          <a class="col" href="#temorak"><img class="game-cover" src="img/temorak_logo.png" alt="Temorak"></a>
-          <a class="col" href="#usmbeats"><img class="game-cover" src="img/usmbeats_logo.png" alt="usm beats"></a>
-        </div>
+    <main role="main">
+      <section id="home" style="display: block;">
         <br>
         <br>
         <br>
-        <div id="wawary" class="card bg-dark">
-          <h5 class="card-header bg-secondary">Wawary</h5>
-          <div class="card-body">
-            <img class="round-border" src="img/wawary_cover.png" alt="" width=300 height=400><br><br>
-            <h5 class="card-title">{{wawary_short_desc}}</h5>
-            <p class="card-text">{{created_jan_published_jdev}}
-            {{wawary_long_desc}}</p>
-            <iframe frameborder="0" src="https://itch.io/embed/945992?dark=true" width="256" height="167"><a href="https://jdev-es.itch.io/wawary">wawary by jDev ES</a></iframe>
-          </div>
-        </div>
         <br>
         <br>
-        <br>
-        <div id="flanker" class="card bg-dark">
-          <h5 class="card-header bg-secondary">Flanker</h5>
-          <div class="card-body">
-            <img class="round-border" src="img/flanker_logo.png" alt="" width=300 height=400><br><br>
-            <h5 class="card-title">{{flanker_short_desc}}</h5>
-            <p class="card-text">{{created_jan_published_jdev}}
-            {{flanker_long_desc}}</p>
-            <iframe frameborder="0" src="https://itch.io/embed/945955?linkback=true&amp;dark=true" width="256" height="167"><a href="https://jdev-es.itch.io/flanker">Flanker by jDev ES</a></iframe>
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div id="temorak" class="card bg-dark">
-          <h5 class="card-header bg-secondary">Temorak</h5>
-          <div class="card-body">
-            <img class="round-border" src="img/temorak_logo.png" alt="" width=300 height=400><br><br>
-            <h5 class="card-title">{{temorak_short_desc}}</h5>
-            <p class="card-text">{{created_jan_published_jdev}}
-            {{temorak_long_desc}}
+        <div class="container"><h1>jDev</h1>
+          <h3>Everything for everyone</h3>
+          <br>
+          <br>
           
-            {{download_browser}}</p>
-            <a target=temorak_play href="https://jdev.com.es/Temorak/" class="btn btn-success">{{play_browser}}</a>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <a href="#about" class="btn btn-link text-decoration-none text-primary"><h1>About us
+                <img width="286" height="286" src="img/team.svg" alt="">
+              </h1></a>
+            </div>
+            <div class="col">
+              <a href="#games" class="btn btn-link text-decoration-none text-primary"><h1>Games
+                <img width="286" height="286" src="img/games.svg" alt="">
+              </h1></a>
+            </div>
+            <div class="col">
+              <a href="#software" class="btn btn-link text-decoration-none text-primary"><h1>Software
+                <img width="286" height="286" src="img/software.svg" alt="">
+              </h1></a>
+            </div>
           </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div id="usmbeats" class="card bg-dark">
-          <h5 class="card-header bg-secondary">usm <i>beats</i></h5>
-          <div class="card-body">
-            <img class="round-border" src="img/usmbeats_logo.png" alt="" width=300 height=400><br><br>
-            <h5 class="card-title">{{usmbeats_short_desc}}</h5>
-            <p class="card-text">{{created_jan_published_jdev}}
-            {{usmbeats_long_desc}}</p>
-            <iframe frameborder="0" src="https://itch.io/embed/946009?linkback=true&amp;dark=true" width="256" height="167"><a href="https://jdev-es.itch.io/usm-beats">usm beats by jDev ES</a></iframe>
+  
+          <br>
+          <br>
           </div>
-        </div>
-
-        <br>
-      </div>
-    </div>
-    <div id="software">
-      <div class="container">
-        <br>
-        <br>
-        <h1>{{software}}</h1>
-        <h3>{{software_desc}}</h3>
-        <br>
-
-        <div class="card bg-dark">
-          <h5 class="card-header bg-secondary">objG</h5>
-          <div class="card-body">
-            <p class="card-text">
-              {{objg_desc}}
-            </p>
-            <a target=github_objg href="https://github.com/JanCraft/objG/" class="btn btn-success"><i class="fas fa-link"></i> GitHub</a>
+      </section>
+      <button type="button" class="collapsible" data-name="#about">About us</button>
+      <section id="about">
+        <div class="container">
+          <br>
+          <br>
+  
+          <h1>About</h1>
+          <h3>the jDev Team</h3>
+  
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card bg-dark">
+                <h4 class="card-header bg-secondary">jancraft888 <i>(aka. Jan)</i></h4>
+                <div class="card-body">
+                  <h6 class="card-subtitle">Main developer & Founder</h6><br>
+                  <p class="card-text"><i>"I created jDev in 2016 to publish games and develop tools, now it has grown a bit more and we released various games. I hope we grow a bit more this year."</i></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark">
+                <h4 class="card-header bg-secondary">DarKITO <i>(aka. Hugo)</i></h4>
+                <div class="card-body">
+                  <h6 class="card-subtitle">Creative Director</h6><br>
+                  <p class="card-text"><i>"[no quote available]"</i></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark">
+                <h4 class="card-header bg-secondary">ErikOtaku <i>(aka. Erik)</i></h4>
+                <div class="card-body">
+                  <h6 class="card-subtitle">External developer</h6><br>
+                  <p class="card-text"><i>"[no quote available]"</i></p>
+                </div>
+              </div>
+            </div>
           </div>
+  
+          <br>
+          <br>
+          <h4 class="alert alert-primary" role="alert">
+            <b>jDev</b> was a name Jan decided to give his development team, he thought about <i>Jancraft Developers</i>, but it sounded too egoist, so he named it jDev. Jan was the only developer back then, and made many simple games now lost on 5 year old hard drives, some may still be available through old pages.
+          </h4>
+  
+          <br>
+          <br>
+          <h4 class="alert alert-success" role="alert">
+            <b>Schedule</b><br>We don't have a defined schedule, we believe personal time is important and we provide everyone with excessive personal time. Most people in the team work when they feel like working and that is usually when we need it.
+          </h4>
+  
+          <br>
+          <br>
+          <h4 class="alert alert-warning" role="alert">
+            <b>Billing</b><br>jDev producs will <i>always</i> be free forever. And we don't get any revenue from any of our products. Most projects (except games) are Open Source.
+          </h4>
         </div>
-        <br>
+      </section><br><br>
+      <button type="button" class="collapsible" data-name="#games">Games</button>
+      <section id="games">
+        <div class="container">
+          <br>
+          <br>
+          <h1>Games</h1>
+          <h3>we made for fun!</h3>
+          <br>
+          <br>
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div id="wawary" class="card bg-dark">
+                <h5 class="card-header bg-secondary">Wawary</h5>
+                <div class="card-body">
+                  <img class="round-border" src="img/wawary_cover.png" alt="wawary logo" width=150 height=200><br><br>
+                  <h5 class="card-title">A rhythm game where you collect blue blobs as fast as possible</h5>
+                  <iframe loading="lazy" frameborder="0" src="https://itch.io/embed/945992?dark=true" width="256" height="167"><a href="https://jdev-es.itch.io/wawary">wawary by jDev ES</a></iframe>
+                </div>
+              </div>
+            </div>
 
-        <div class="card bg-dark">
-          <h5 class="card-header bg-secondary">dynscript</h5>
-          <div class="card-body">
-            <p class="card-text">
-              {{dynscript_desc}}
-            </p>
-            <a target=github_dynscript href="https://github.com/JanCraft/dynscript/" class="btn btn-success"><i class="fas fa-link"></i> GitHub</a>
+            <div class="col">
+              <div id="flanker" class="card bg-dark">
+                <h5 class="card-header bg-secondary">Flanker</h5>
+                <div class="card-body">
+                  <img class="round-border" src="img/flanker_logo.png" alt="Flanker logo" width=150 height=200><br><br>
+                  <h5 class="card-title">A classic FPS-style game</h5>
+                  <iframe loading="lazy" frameborder="0" src="https://itch.io/embed/945955?linkback=true&amp;dark=true" width="256" height="167"><a href="https://jdev-es.itch.io/flanker">Flanker by jDev ES</a></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div id="temorak" class="card bg-dark">
+                <h5 class="card-header bg-secondary">Temorak <span class="badge bg-danger">BETA</span></h5>
+                <div class="card-body">
+                  <img class="round-border" src="img/temorak_logo.png" alt="Temorak logo" width=150 height=200><br><br>
+                  <h5 class="card-title">Survival and adventure game where you play as a ghost</h5>
+                  <a target=temorak_play href="https://jdev.com.es/Temorak/" class="btn btn-success">Play in the browser</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div id="usmbeats" class="card bg-dark">
+                <h5 class="card-header bg-secondary">usm <i>beats</i></h5>
+                <div class="card-body">
+                  <img class="round-border" src="img/usmbeats_logo.png" alt="usmbeats logo" width=150 height=200><br><br>
+                  <h5 class="card-title">Another, more innovative, rhythm game</h5>
+                  <iframe loading="lazy" frameborder="0" src="https://itch.io/embed/946009?linkback=true&amp;dark=true" width="256" height="167"><a href="https://jdev-es.itch.io/usm-beats">usm beats by jDev ES</a></iframe>
+                </div>
+              </div>
+            </div>
           </div>
+  
+          <br>
         </div>
-        <br>
-
-        <div class="card bg-dark">
-          <h5 class="card-header bg-secondary">QFT</h5>
-          <div class="card-body">
-            <p class="card-text">
+      </section><br><br>
+      <button type="button" class="collapsible" data-name="#software">Software</button>
+      <section id="software">
+        <div class="container">
+          <br>
+          <br>
+          <h1>Software</h1>
+          <h3>and utilites for developers</h3>
+          <br>
+  
+          <div class="card bg-dark">
+            <h5 class="card-header bg-secondary">jDev GameKit 2</h5>
+            <div class="card-body">
               <p class="card-text">
-                {{qft_desc}}
+                <p class="card-text">
+                  A game kit for developers to make 2D games in the browser with less effort. With different demos, it was the most developed jDev codebase in 2020.
+                </p>
+                <a target=github_gamekit2 href="https://github.com/JanCraft/jDev-GameKit2/" class="btn btn-success">GitHub</a>
               </p>
-              <a target=github_qft href="https://github.com/JanCraft/QFT/" class="btn btn-success"><i class="fas fa-link"></i> GitHub</a>
-            </p>
+            </div>
           </div>
-        </div>
-        <br>
-
-        <div class="card bg-dark">
-          <h5 class="card-header bg-secondary">jDev GameKit 2</h5>
-          <div class="card-body">
-            <p class="card-text">
+          <br>
+  
+          <div class="card bg-dark">
+            <h5 class="card-header bg-secondary">jDev gNET</h5>
+            <div class="card-body">
               <p class="card-text">
-                {{gamekit_desc}}
+                <p class="card-text">
+                  jDev gNET is a server hosting service that uses a kind of peer-to-peer technique to achieve host/client communication in realtime. It is intended for use on videogames and simple applications.
+                </p>
+                <a target=github_gnet href="https://github.com/JanCraft/jdev-gNET/" class="btn btn-success">GitHub</a>
               </p>
-              <a target=github_gamekit2 href="https://github.com/JanCraft/jDev-GameKit2/" class="btn btn-success"><i class="fas fa-link"></i> GitHub</a>
-            </p>
+            </div>
           </div>
-        </div>
-        <br>
+          <br>
 
-        <div class="card bg-dark">
-          <h5 class="card-header bg-secondary">jDev gNET</h5>
-          <div class="card-body">
-            <p class="card-text">
+          <div class="card bg-dark">
+            <h5 class="card-header bg-secondary">pjs</h5>
+            <div class="card-body">
               <p class="card-text">
-                {{gnet_desc}}
-              </p>
-              <a target=github_gnet href="https://github.com/JanCraft/jdev-gNET/" class="btn btn-success"><i class="fas fa-link"></i> GitHub</a>
-            </p>
-          </div>
-        </div>
-        <br>
-      </div>
-    </div>
+                <p class="card-text">
+                  pjs is a JavaScript framework built for Vanilla Web Developers, meaning it was created to simplify web development while keeping things vanilla.
 
-    <button onclick="backToTop()" tabindex="-1" class="btn btn-primary" id="back-to-top" title="Go to top">Top</button>
+                  It supports a syntax similar to JSX, a URL Router, live reload, and much more!
+                </p>
+                <a target=website_pjs href="https://pjs-docs.vercel.app/" class="btn btn-success">Website</a>
+                <a target=github_pjs href="https://github.com/JanCraft/pjs/" class="btn btn-success">GitHub</a>
+              </p>
+            </div>
+          </div>
+          <br>
+
+          <div class="card bg-dark">
+            <h5 class="card-header bg-secondary">Denohost</h5>
+            <div class="card-body">
+              <p class="card-text">
+                <p class="card-text">
+                  Denohost is a free, secure and simple hosting provider for Deno HTTP apps. It has support for simple APIs and saving secrets privately.
+                </p>
+                <a target=website_denohost href="https://denohost.herokuapp.com/" class="btn btn-success">Website</a>
+                <a target=github_denohost href="https://github.com/JanCraft/denohost/" class="btn btn-success">GitHub</a>
+              </p>
+            </div>
+          </div>
+          <br>
+        </div>
+      </section><br><br>
+      <button type="button" class="active fake-collapsible">Blogs / devlogs</button>
+      <section id="devlogs" style="display: block;">
+        <br>
+        <br>
+
+        <h1>Blog / devlogs</h1>
+        <h3>Developers write entries here about the development</h3>
+        <br>
+
+        <ul id="articles"></ul>
+        <br>
+      </section>
+    </main>
     
     <footer>
       <div class="container">
         &copy; Copyright - jDev 2021
       </div>
     </footer>
-    
-    <script src="lang.js"></script>
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/functionality.js"></script>
+    <script defer src="/devlogs.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

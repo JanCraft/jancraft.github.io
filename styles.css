@@ -15,16 +15,16 @@ body {
 .game-cover {
     margin-right: 10px;
     border-radius: 1vh;
-    width: 213px;
-    height: 284px;
+    width: 163px;
+    height: 234px;
     transition-duration: 250ms;
     transition-property: width, height;
 
 }
 
 .game-cover:hover {
-    width: 223px;
-    height: 294px;
+    width: 173px;
+    height: 244px;
     
     border: 2px solid white;
 }
@@ -50,9 +50,10 @@ body {
 footer {
     padding: 10px;
     padding-top: 1px;
-    background-color: rgb(100, 100, 100);
+    background-color: #506aa1;
     align-items: center;
     font-size: 18px;
+    color: black;
 }
 
 .navbar {
@@ -60,17 +61,11 @@ footer {
     top: 0px;
     width: 100%;
     z-index: 99;
-    background-color: darkslategray;
-}
-
-#about, #software {
-    background-color: black;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    background-color: #506aa1;
 }
 
 .nav-link {
-    color: white !important;
+    color: black !important;
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -84,11 +79,41 @@ footer {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: #000;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
 .nav-link:hover:after, .nav-link.active:after { 
     width: 100%; 
     left: 0px;
+}
+
+.collapsible, .fake-collapsible {
+    background-color: #506aa1;
+    color: #222;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+}
+  
+.active, .collapsible:hover, .fake-collapsible:hover {
+    background-color: #5087a1;
+}
+
+section {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+#articles {
+    list-style: none;
+}
+
+article p {
+    font-size: x-large;
 }
